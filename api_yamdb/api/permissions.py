@@ -21,6 +21,7 @@ class IsAdminOrReaOnly(permissions.BasePermission):
             return request.user.is_admin
         return False
 
+
 class AuthorOrModerOrReadOnly(permissions.IsAuthenticatedOrReadOnly):
 
     def has_object_permission(self, request, view, obj):
