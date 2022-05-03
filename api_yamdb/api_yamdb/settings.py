@@ -14,7 +14,7 @@ SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [os.getenv('DB_HOST'), '51.250.29.12']
+ALLOWED_HOSTS = ['51.250.29.12']
 
 
 # Application definition
@@ -67,6 +67,14 @@ WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 # Database
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'postgres',
+    #     'USER': 'postgres',
+    #     'PASSWORD': ='postgres',
+    #     'HOST': os.getenv('DB_HOST', default='db'),
+    #     'PORT': os.getenv('DB_PORT', default='5432')
+    # }
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
         'NAME': os.getenv('DB_NAME', default='postgres'),
