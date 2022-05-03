@@ -11,9 +11,9 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
-from reviews.models import Category, Comment, Genre, Review, Title, User
 
 from api_yamdb import settings
+from reviews.models import Category, Comment, Genre, Review, Title, User
 
 from .filter import TitleFilter
 from .permissions import AuthorOrModerOrReadOnly, IsAdmin, IsAdminOrReaOnly

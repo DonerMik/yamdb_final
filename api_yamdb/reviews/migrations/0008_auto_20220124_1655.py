@@ -4,8 +4,9 @@ import re
 
 import django.core.validators
 import django.db.models.deletion
-import reviews.validators
 from django.db import migrations, models
+
+import reviews.validators
 
 
 class Migration(migrations.Migration):
