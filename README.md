@@ -25,3 +25,4 @@ docker-compose exec web python manage.py migrate docker-compose exec web python 
 Отключение сервиса : docker-compose down -v
 
 Автор: Микутайтис Денис. Почта: denismik92@gmail.com
+![example workflow](https://github.com/DonerMik/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
